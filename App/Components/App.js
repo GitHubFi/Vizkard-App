@@ -20,6 +20,7 @@ import SignIn from "./SignIn/SignIn.js";
 import SignUp from "./SignUp/SignUp.js";
 import VerifySignIn from "./SignIn/Verify";
 import ChatScreen from './TabNavigator/ChatScreen'
+import Dashboard from './TabNavigator/Dashboard'
 import { Provider } from "react-redux";
 import { store, persistor } from "../Store/index";
 // import { loadState, saveState } from '../Store/stateMaintain'
@@ -31,10 +32,11 @@ const AuthStackNavigator = createStackNavigator(
     signIn: SignIn,
     verifySignIn: VerifySignIn,
     app: AppDrawerNavigator,
+    Dashboard: Dashboard
     // ChatScreen:ChatScreen
   },
   {
-    initialRouteName: "signIn"
+    initialRouteName: "Dashboard"
   }
 );
 

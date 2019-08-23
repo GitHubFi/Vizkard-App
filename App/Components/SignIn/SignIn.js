@@ -140,10 +140,12 @@ class SignIn extends Component {
               rounded
               style={{
                 alignSelf: "center",
-                marginTop: 10,
-                backgroundColor: "#008ace"
+                marginTop: 15,
+                backgroundColor: "#008ace",
+                width:width/2
               }}
               onPress={this.signIn}
+              
             >
               <Text
                 style={{
@@ -152,6 +154,7 @@ class SignIn extends Component {
                   fontWeight: "bold",
                   textAlign: "center"
                 }}
+                onPress={this.signIn}
               >
                 Submit
   </Text>
